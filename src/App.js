@@ -14,7 +14,7 @@ const [characterList, setCharacterList] = useState([]);
   // sync up with, if any.
 
   useEffect(() => {
-    axios.get("https://swapi.dev/api/people")
+    axios.get("https://swapi.dev/api/people/")
       .then(res => {
         console.log(res.data);
         setCharacterList(res.data.results);
